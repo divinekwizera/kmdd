@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WebLearn | Learn Web Development</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">WebLearn</a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation menu"
+                    aria-expanded="false">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO WEBLEARN</p>
+
+            <h1>Learn to Build Amazing Websites</h1>
+
+            <p>
+                Start your web development journey today.
+                Learn HTML, CSS, and JavaScript step by step.
+            </p>
+
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section" id="courses">
+        <h2>Our Courses</h2>
+
+        <p class="section-description">
+            Learn the essential skills you need to create modern websites.
+        </p>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <div class="course-icon">🌐</div>
+                <h3>HTML</h3>
+
+                <p>
+                    Learn how to structure web pages using
+                    HyperText Markup Language.
+                </p>
+
+                <button class="btn lesson-btn"
+                        data-lesson="htmlLesson"
+                        aria-expanded="false">
+                    Start Learning
+                </button>
+
+                <div class="lesson-content" id="htmlLesson" hidden>
+                    <h4>Your First HTML Page</h4>
+
+                    <pre><code>&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;p&gt;Welcome to my website.&lt;/p&gt;</code></pre>
+
+                    <p>
+                        HTML is used to organize content on a webpage.
+                    </p>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🎨</div>
+                <h3>CSS</h3>
+
+                <p>
+                    Learn how to style websites with colors,
+                    layouts, fonts, and animations.
+                </p>
+
+                <button class="btn lesson-btn"
+                        data-lesson="cssLesson"
+                        aria-expanded="false">
+                    Start Learning
+                </button>
+
+                <div class="lesson-content" id="cssLesson" hidden>
+                    <h4>Your First CSS Style</h4>
+
+                    <pre><code>body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: navy;
+}</code></pre>
+
+                    <p>
+                        CSS controls the appearance of a webpage.
+                    </p>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">⚡</div>
+                <h3>JavaScript</h3>
+
+                <p>
+                    Learn how to make websites interactive
+                    with JavaScript.
+                </p>
+
+                <button class="btn lesson-btn"
+                        data-lesson="jsLesson"
+                        aria-expanded="false">
+                    Start Learning
+                </button>
+
+                <div class="lesson-content" id="jsLesson" hidden>
+                    <h4>Your First JavaScript Code</h4>
+
+                    <pre><code>function sayHello() {
+    alert("Hello, World!");
+}
+
+sayHello();</code></pre>
+
+                    <p>
+                        JavaScript makes websites respond to user actions.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <h2>Practice Projects</h2>
+
+        <p class="section-description">
+            Improve your skills by building real projects.
+        </p>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    Create a website to introduce yourself
+                    and showcase your skills.
+                </p>
+                <span>HTML + CSS</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Calculator</h3>
+                <p>
+                    Build a simple calculator that performs
+                    basic mathematical operations.
+                </p>
+                <span>HTML + CSS + JavaScript</span>
+            </div>
+
+            <div class="project-card">
+                <h3>To-Do List</h3>
+                <p>
+                    Create an application that helps users
+                    organize their daily tasks.
+                </p>
+                <span>HTML + CSS + JavaScript</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <h2>About WebLearn</h2>
+
+        <p>
+            WebLearn is a learning platform designed to help beginners
+            understand web development. Our goal is to make learning
+            HTML, CSS, and JavaScript simple, practical, and enjoyable.
+        </p>
+
+        <p>
+            Learn at your own pace, practice your skills, and turn
+            your ideas into real websites.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <h2>Contact Us</h2>
+
+        <p class="section-description">
+            Have a question? Send us a message.
+        </p>
+
+        <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="email">Your Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="message">Your Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+            ></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+            <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 WebLearn. All rights reserved.</p>
+        <p>Learn Today. Build Tomorrow.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

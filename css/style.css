@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+parent{
+    border bottom:1px solid black rgb(171, 170, 170);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background:white;
+    box-shadow:0 4px 2px -2px rgb(0, 0, 0, 0.8)
+    
+    padding; 16px 40px;
+}
+first children{
+    display: flex;
+    align-items: center;
+}
