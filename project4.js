@@ -3,7 +3,7 @@ const students = [
   { name: "Eric", score: 47 },
   { name: "Grace", score: 76 },
   { name: "Jean", score: 58 },
-  { name: "Diane", score: 83 },
+  { name: "Diane", score: 83 }
 ];
 let total = 0;
 let passed = 0;

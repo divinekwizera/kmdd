@@ -11,7 +11,9 @@ console.log(name, typeof name);
 console.log(age, typeof age);                 
 console.log(isStudent, typeof isStudent);     
 console.log(favoriteColor, typeof favoriteColor); 
-console.log(hobbies, typeof hobbies);         
+console.log(hobbies, typeof hobbies);  
+
+let text = "";
 
 let result = text
     .split("-")
